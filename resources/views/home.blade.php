@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="shortcut icon" href="{{asset('image/logo.jpg')}}" type="image/x-icon">
     <title>SMS EXPRESS</title>
-    {{-- <link rel="stylesheet" href="{{asset('css/app.css')}}"> --}}
-    @vite('resources/css/app.css')
+    <link rel="stylesheet" href="{{asset('build/assets/app-ff53ee22.css')}}">
+    {{-- @vite('resources/css/app.css') --}}
 </head>
 <body>
     <header class="py-10">
@@ -27,7 +27,7 @@
             <div class="hidden md:block">
               <a class="inline-block rounded-lg px-2 py-1 text-md text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="#faq">FAQ</a>
             </div>
-            <a class="group inline-flex items-center justify-center rounded py-2 px-4 text-md font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-teal-500 text-white hover:text-slate-100 hover:bg-teal-600 active:bg-teal-800 active:text-teal-100 focus-visible:outline-teal-600" href="/register">
+            <a class="group inline-flex items-center justify-center rounded py-2 px-4 text-md font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-teal-500 text-white hover:text-slate-100 hover:bg-teal-600 active:bg-teal-800 active:text-teal-100 focus-visible:outline-teal-600" href="">
               <span>Mon compte</span>
             </a>
             <div class="-mr-1 md:hidden">
