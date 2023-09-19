@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +15,5 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [HomeController::class,'homepage']);
+Route::get('/', [HomeController::class,'homepage'])->name('home');
+Route::get('/customer/dashboard', [UserController::class,'customerhome'])->name('customerhome');

@@ -7,6 +7,7 @@
 	<link rel="shortcut icon" href="{{asset('image/logo.jpg')}}" type="image/x-icon">
     <title>SMS EXPRESS</title>
     <link rel="stylesheet" href="{{asset('build/assets/app-ff53ee22.css')}}">
+	<script src=" {{asset('build/assets/app-0d91dc04.js')}} "></script>
     {{-- @vite('resources/css/app.css') --}}
 </head>
 <body>
@@ -15,7 +16,7 @@
         <nav class="relative z-50 flex justify-between">
           <div class="flex items-center md:gap-x-12">
             <a aria-label="Home" href="#presentation">
-              <img src="{{asset('image/logo.jpg')}}" width="50" height="50" alt="">
+              <img src="{{asset('image/logo.jpg')}}" class="w-10" alt="">
             </a>
             <div class="hidden md:flex md:gap-x-6">
               <a class="inline-block rounded-lg px-2 py-1 text-md text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="#nos-chiffres">Nos chiffres</a>
@@ -43,7 +44,7 @@
 	</header>
     <main>
 		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16 pt-20 text-center lg:pt-32" id="presentation">
-			<h1 class="mx-auto max-w-4xl font-display text-5xl font-bold tracking-tight text-slate-900 sm:text-7xl">Engagez votre<!-- --> 
+			<h1 class="mx-auto max-w-4xl font-display text-5xl font-bold tracking-tight text-slate-900 sm:text-7xl">Engagez votre<!-- -->
 			<span class="relative whitespace-nowrap text-teal-400">
 				<svg aria-hidden="true" viewBox="0 0 418 42" class="absolute left-0 top-2/3 h-[0.58em] w-full fill-teal-600/50" preserveAspectRatio="none"><path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z"></path></svg>
 				<span class="relative">audiance</span>
@@ -53,25 +54,25 @@
 			<div class="mt-10 flex justify-center gap-x-6">
 			<a class="group inline-flex items-center justify-center rounded py-2 px-4 text-md font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900" href="/register">C'est parti</a>
 			</div>
-			<div class="mt-36 lg:mt-24">
-			<p class="font-display text-base text-slate-900">Ces entreprises nous ont fais confiance</p>
-			<ul role="list" class="mt-8 flex items-center justify-center gap-x-8 sm:flex-col sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0">
-				<li>
+			{{-- <div class="mt-36 lg:mt-24">
+				<p class="font-display text-base text-slate-900">Ces entreprises nous ont fais confiance</p>
+				<ul role="list" class="mt-8 flex items-center justify-center gap-x-8 sm:flex-col sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0">
+					<li>
 					<ul role="list" class="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0">
-						<li class="flex"><img alt="Transistor" loading="lazy" decoding="async" data-nimg="1" style="color:transparent" src="https://salient.tailwindui.com/_next/static/media/transistor.7274e6c3.svg" width="158" height="48"></li>
-						<li class="flex"><img alt="Tuple" loading="lazy" decoding="async" data-nimg="1" style="color:transparent" src="https://salient.tailwindui.com/_next/static/media/tuple.74eb0ae0.svg" width="105" height="48"></li>
-						<li class="flex"><img alt="StaticKit" loading="lazy" decoding="async" data-nimg="1" style="color:transparent" src="https://salient.tailwindui.com/_next/static/media/statickit.d7937794.svg" width="127" height="48"></li>
-					</ul>
-				</li>
-				<li>
-					{{-- <ul role="list" class="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0">
-						<li class="flex"><img alt="Mirage" loading="lazy" decoding="async" data-nimg="1" style="color:transparent" src="https://salient.tailwindui.com/_next/static/media/mirage.18d2ec4e.svg" width="138" height="48"></li>
-						<li class="flex"><img alt="Laravel" loading="lazy" decoding="async" data-nimg="1" style="color:transparent" src="https://salient.tailwindui.com/_next/static/media/laravel.7deed17e.svg" width="136" height="48"></li>
-						<li class="flex"><img alt="Statamic" loading="lazy" decoding="async" data-nimg="1" style="color:transparent" src="https://salient.tailwindui.com/_next/static/media/statamic.6da5ebfb.svg" width="147" height="48"></li>
-					</ul> --}}
-				</li>
-			</ul>
-			</div>
+							<li class="flex"><img alt="Transistor" loading="lazy" decoding="async" data-nimg="1" style="color:transparent" src="https://salient.tailwindui.com/_next/static/media/transistor.7274e6c3.svg" width="158" height="48"></li>
+							<li class="flex"><img alt="Tuple" loading="lazy" decoding="async" data-nimg="1" style="color:transparent" src="https://salient.tailwindui.com/_next/static/media/tuple.74eb0ae0.svg" width="105" height="48"></li>
+							<li class="flex"><img alt="StaticKit" loading="lazy" decoding="async" data-nimg="1" style="color:transparent" src="https://salient.tailwindui.com/_next/static/media/statickit.d7937794.svg" width="127" height="48"></li>
+						</ul>
+					</li>
+					<li>
+						<ul role="list" class="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0">
+							<li class="flex"><img alt="Mirage" loading="lazy" decoding="async" data-nimg="1" style="color:transparent" src="https://salient.tailwindui.com/_next/static/media/mirage.18d2ec4e.svg" width="138" height="48"></li>
+							<li class="flex"><img alt="Laravel" loading="lazy" decoding="async" data-nimg="1" style="color:transparent" src="https://salient.tailwindui.com/_next/static/media/laravel.7deed17e.svg" width="136" height="48"></li>
+							<li class="flex"><img alt="Statamic" loading="lazy" decoding="async" data-nimg="1" style="color:transparent" src="https://salient.tailwindui.com/_next/static/media/statamic.6da5ebfb.svg" width="147" height="48"></li>
+						</ul>
+					</li>
+				</ul>
+			</div> --}}
 		</div>
 
 		{{-- Stat D'utilisation --}}
@@ -84,20 +85,20 @@
 				</div>
 				<dl class="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
 					<div class="flex flex-col bg-slate-200 p-8">
-						<dt class="text-sm font-semibold leading-6 text-gray-600">SMS ENVOYÉ / JOUR</dt>
+						<dt class="text-sm font-semibold leading-6 text-gray-600">SMS Envoyé / Jour</dt>
 						<dd class="order-first text-3xl font-semibold tracking-tight text-gray-900">1000+</dd>
 					</div>
 					<div class="flex flex-col bg-slate-200 p-8">
-						<dt class="text-sm font-semibold leading-6 text-gray-600">Utilisateur Particulier</dt>
+						<dt class="text-sm font-semibold leading-6 text-gray-600">Utilisateur Basic</dt>
 						<dd class="order-first text-3xl font-semibold tracking-tight text-gray-900">100+</dd>
 					</div>
 					<div class="flex flex-col bg-slate-200 p-8">
-						<dt class="text-sm font-semibold leading-6 text-gray-600">Entreprise</dt>
+						<dt class="text-sm font-semibold leading-6 text-gray-600">Utilisateur Pro</dt>
 						<dd class="order-first text-3xl font-semibold tracking-tight text-gray-900">9+</dd>
 					</div>
 					<div class="flex flex-col bg-slate-200 p-8">
 						<dt class="text-sm font-semibold leading-6 text-gray-600">Pays disponible</dt>
-						<dd class="order-first text-3xl font-semibold tracking-tight text-gray-900">200</dd>
+						<dd class="order-first text-3xl font-semibold tracking-tight text-gray-900">+200</dd>
 					</div>
 				</dl>
 			</div>
@@ -114,11 +115,11 @@
 							<span class="relative">Une tarification simple,</span>
 						</span> pour tous.
 					</h2>
-					<p class="mt-4 text-lg text-slate-400">Quelque soit la taille de votre entreprise,choisissez une offre qui vous convient</p>
+					<p class="mt-4 text-lg text-slate-400">Quelque soit la taille de votre business, choisissez une offre qui vous convient</p>
 				</div>
-				<div class="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-5 xl:mx-0 xl:gap-x-8">
-				
-					
+				<div class="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-5 md:mx-0 md:gap-x-8">
+
+
 					<section class="flex border border-white h-max flex-col rounded-3xl px-6 sm:px-8 py-8 md:mx-0 mx-8">
 						<h3 class="mt-1 font-display text-lg text-white">10 SMS</h3>
 						<p class="mt-2 text-base text-slate-400">Pack 1</p>
@@ -213,7 +214,7 @@
 						<ul role="list" class="flex flex-col gap-y-8">
 							<li>
 								<h3 class="font-display font-semibold text-lg leading-7 text-slate-900">Comment puis-je envoyer des SMS en masse avec SMS Express ?</h3>
-								<p class="mt-4 text-sm text-slate-700">Connectez-vous à votre compte SMS Express, importez vos contacts, rédigez votre message et choisissez les destinataires. Ensuite, cliquez sur "Envoyer" pour lancer la diffusion des SMS.</p>
+								<p class="mt-4 text-sm text-slate-700">Connectez-vous à votre compte SMS Express, importez vos contacts, rédigez votre message et choisissez les destinataires. Ensuite, cliquez sur "Envoyer" pour lancer la diffusion des SMS. <strong class="text-teal-400"><a href="#">Formule Pro</a></strong> </p>
 							</li>
 						</ul>
 					</li>
@@ -221,7 +222,7 @@
 						<ul role="list" class="flex flex-col gap-y-8">
 							<li>
 								<h3 class="font-display font-semibold text-lg leading-7 text-slate-900">SMS Express garantit-il la confidentialité de mes données ?</h3>
-								<p class="mt-4 text-sm text-slate-700">We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.</p>
+								<p class="mt-4 text-sm text-slate-700">Oui, nous accordons une grande importance à la sécurité des données de nos utilisateurs et mettons en place des mesures pour protéger vos informations personnelles.</p>
 							</li>
 						</ul>
 					</li>
