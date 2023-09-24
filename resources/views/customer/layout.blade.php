@@ -14,8 +14,11 @@
 
     <nav class="w-full fixed flex flex-row items-center justify-between bg-white z-10 shadow-sm border-b border-gray px-6 py-3 h-20">
         <div><a href="{{route('home')}}"><img class="w-10" src="{{asset('image/logo.jpg')}}" alt=""></a></div>
-        <div>
+        <div class="hidden md:block">
             <span class="flex cursor-pointer bg-teal-600 w-12 h-12 rounded-3xl text-white items-center justify-center border-2 border-teal-700">FA</span>
+        </div>
+        <div class="block md:hidden" id="menu">
+            <i class="fa-solid fa-bars text-3xl text-teal-700 cursor-pointer"></i>
         </div>
     </nav>
     <section class="flex absolute w-screen top-20 h-[calc(100%-5rem)]">
@@ -39,8 +42,35 @@
 
     </section>
 
+    {{-- Mobile nav --}}
+    <div id="mobilenav" class="md:hidden transition-all duration-500 ease-in-out flex flex-col justify-between border-r border-gray-200 w-2/3 bg-white px-4 py-4 h-full z-50 fixed -left-2/3">
+        <div class="flex flex-col gap-y-4 w-[100%]" id="sidenav">
+            <div><a href="{{route('home')}}"><img class="w-10" src="{{asset('image/logo.jpg')}}" alt=""></a></div>
+            <a href="{{route('customerhome')}}" class="px-4 py-4 text-gray-600 bg-slate-50 hover:bg-slate-100 w-[100%] flex gap-x-4 font-semibold items-center rounded-md"><i class="fa-brands fa-font-awesome "></i> Envoyer un SMS</a>
+            <a href="{{route('customersouscription')}}" class="px-4 py-4 text-gray-600 bg-slate-50 hover:bg-slate-100 flex items-center gap-x-4 font-semibold w-[100%] rounded-md"><i class="fa-solid fa-money-bill-trend-up"></i> Historiques de paiements</a>
+            <a href="{{route('customertransaction')}}" class="px-4 py-4 text-gray-600 bg-slate-50 hover:bg-slate-100 flex items-center gap-x-4 font-semibold w-[100%] rounded-md"><i class="fa-solid fa-paper-plane"></i> Historiques des envois</a>
+            <a href="{{route('customeroffre')}}" class="px-4 py-4 text-gray-600 bg-slate-50 hover:bg-slate-100 flex items-center gap-x-4 font-semibold w-[100%] rounded-md"><i class="fa-solid fa-envelope-circle-check"></i> Abonnement Pro</a>
+            <a href="{{route('customerprofile')}}" class="px-4 py-4 text-gray-600 bg-slate-50 hover:bg-slate-100 flex items-center gap-x-4 font-semibold w-[100%] rounded-md"><i class="fa-solid fa-user-tie"></i> Profile</a>
+        </div>
+        <div class="w-[100%] flex flex-col gap-y-4 items-center justify-center ">
+            <a href="" class="px-4 py-4 text-white bg-gray-300 w-[100%] flex items-center gap-x-4 rounded-md hover:bg-gray-400"><i class="fa-solid fa-circle-info"></i> Service Client</a>
+            <a href="" class="px-4 py-4 text-white bg-gray-600 w-[100%] flex items-center gap-x-4 rounded-md hover:bg-gray-500"><i class="fa-solid fa-power-off text-red-400"></i> Déconnexion</a>
+        </div>
+    </div>
     <script>
         let sidenav_link = document.querySelectorAll('#sidenav a');
+        let menu = document.querySelector('#menu');
+        let navmobile = document.querySelector('#mobilenav');
+
+        menu.addEventListener('click',()=>{
+            if(navmobile.classList.contains('-left-2/3')) {
+                navmobile.classList.remove('-left-2/3')
+                navmobile.classList.add("left-0")
+            } else {
+                navmobile.classList.add('-left-2/3')
+                navmobile.classList.remove("left-0")
+            }
+        })
 
         const path = window.location.pathname;
         console.log(path);
