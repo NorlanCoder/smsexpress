@@ -7,7 +7,7 @@
 
         <div class="w-full flex flex-wrap my-10">
             <div class="cursor-pointer w-full lg:w-1/3 h-auto px-3 mb-10">
-                <div class="flex flex-col justify-center rounded-md bg-slate-50 w-full h-full shadow-md hover:shadow-lg py-4 px-6">
+                <div class="flex flex-col justify-center rounded-md bg-slate-50 w-full h-full transition duration-0 shadow-md hover:shadow-lg hover:duration-300 py-4 px-6">
                     <h1 class="font-bold text-xl text-teal-500 mb-2">Pack 1</h1>
                     <h1 class="font-bold text-lg text-gray-700">Montant: <span class="text-black font-normal">5000 Fcfa</span></h1>
                     <h1 class="font-bold text-lg text-gray-700">SMS: <span class="text-black font-normal">10 sms</span></h1>
@@ -18,7 +18,7 @@
             </div>
 
             <div class="cursor-pointer w-full lg:w-1/3 h-auto px-3 mb-10">
-                <div class="flex flex-col justify-center rounded-md bg-slate-50 w-full h-full shadow-md hover:shadow-lg py-4 px-6">
+                <div class="flex flex-col justify-center rounded-md bg-slate-50 w-full h-full transition duration-0 shadow-md hover:shadow-lg hover:duration-300 py-4 px-6">
                     <h1 class="font-bold text-xl text-teal-500 mb-2">Pack 1</h1>
                     <h1 class="font-bold text-lg text-gray-700">Montant: <span class="text-black font-normal">5000 Fcfa</span></h1>
                     <h1 class="font-bold text-lg text-gray-700">SMS: <span class="text-black font-normal">10 sms</span></h1>
@@ -29,7 +29,7 @@
             </div>
 
             <div class="cursor-pointer w-full lg:w-1/3 h-auto px-3 mb-10">
-                <div class="flex flex-col justify-center rounded-md bg-slate-50 w-full h-full shadow-md hover:shadow-lg py-4 px-6">
+                <div class="flex flex-col justify-center rounded-md bg-slate-50 w-full h-full transition duration-0 shadow-md hover:shadow-lg hover:duration-300 py-4 px-6">
                     <h1 class="font-bold text-xl text-teal-500 mb-2">Pack 1</h1>
                     <h1 class="font-bold text-lg text-gray-700">Montant: <span class="text-black font-normal">5000 Fcfa</span></h1>
                     <h1 class="font-bold text-lg text-gray-700">SMS: <span class="text-black font-normal">10 sms</span></h1>
@@ -40,7 +40,7 @@
             </div>
 
             <div class="cursor-pointer w-full lg:w-1/3 h-auto px-3 mb-10">
-                <div class="flex flex-col justify-center rounded-md bg-slate-50 w-full h-full shadow-md hover:shadow-lg py-4 px-6">
+                <div class="flex flex-col justify-center rounded-md bg-slate-50 w-full h-full transition duration-0 shadow-md hover:shadow-lg hover:duration-300 py-4 px-6">
                     <h1 class="font-bold text-xl text-teal-500 mb-2">Pack 1</h1>
                     <h1 class="font-bold text-lg text-gray-700">Montant: <span class="text-black font-normal">5000 Fcfa</span></h1>
                     <h1 class="font-bold text-lg text-gray-700">SMS: <span class="text-black font-normal">10 sms</span></h1>
@@ -51,7 +51,7 @@
             </div>
 
             <div class="cursor-pointer w-full lg:w-1/3 h-auto px-3 mb-10">
-                <div class="flex flex-col justify-center rounded-md bg-slate-50 w-full h-full shadow-md hover:shadow-lg py-4 px-6">
+                <div class="flex flex-col justify-center rounded-md bg-slate-50 w-full h-full transition duration-0 shadow-md hover:shadow-lg hover:duration-300 py-4 px-6">
                     <h1 class="font-bold text-xl text-teal-500 mb-2">Pack 1</h1>
                     <h1 class="font-bold text-lg text-gray-700">Montant: <span class="text-black font-normal">5000 Fcfa</span></h1>
                     <h1 class="font-bold text-lg text-gray-700">SMS: <span class="text-black font-normal">10 sms</span></h1>
@@ -62,7 +62,7 @@
             </div>
 
             <div class="cursor-pointer w-full lg:w-1/3 h-auto px-3 mb-10">
-                <div class="flex flex-col justify-center rounded-md bg-slate-50 w-full h-full shadow-md hover:shadow-lg py-4 px-6">
+                <div class="flex flex-col justify-center rounded-md bg-slate-50 w-full h-full transition duration-0 shadow-md hover:shadow-lg hover:duration-300 py-4 px-6">
                     <h1 class="font-bold text-xl text-teal-500 mb-2">Pack 1</h1>
                     <h1 class="font-bold text-lg text-gray-700">Montant: <span class="text-black font-normal">5000 Fcfa</span></h1>
                     <h1 class="font-bold text-lg text-gray-700">SMS: <span class="text-black font-normal">10 sms</span></h1>
