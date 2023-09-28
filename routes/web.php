@@ -16,6 +16,9 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', [HomeController::class,'homepage'])->name('home');
+Route::get('/connexion', [HomeController::class,'loginpage'])->name('loginpage');
+Route::get('/inscription', [HomeController::class,'registerpage'])->name('registerpage');
+Route::get('/motdepasseoublie', [HomeController::class,'forgetpage'])->name('forgetpage');
 
 Route::prefix('customer')->group(function () {
     Route::get('/dashboard', [UserController::class,'customerhome'])->name('customerhome');

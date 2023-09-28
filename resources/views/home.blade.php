@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="shortcut icon" href="{{asset('image/logo.jpg')}}" type="image/x-icon">
     <title>SMS EXPRESS</title>
-    <link rel="stylesheet" href="{{asset('build/assets/app-ff53ee22.css')}}">
-	<script src=" {{asset('build/assets/app-0d91dc04.js')}} "></script>
-    {{-- @vite('resources/css/app.css') --}}
+    {{-- <link rel="stylesheet" href="{{asset('build/assets/app-ff53ee22.css')}}"> --}}
+	{{-- <script src=" {{asset('build/assets/app-0d91dc04.js')}} "></script> --}}
+    @vite('resources/css/app.css')
 </head>
 <body>
-    <header class="py-10">
+    <header class="relative z-50 py-10">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <nav class="relative z-50 flex justify-between">
           <div class="flex items-center md:gap-x-12">
@@ -28,11 +28,11 @@
             <div class="hidden md:block">
               <a class="inline-block rounded-lg px-2 py-1 text-md text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="#faq">FAQ</a>
             </div>
-            <a class="group inline-flex items-center justify-center rounded py-2 px-4 text-md font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-teal-500 text-white hover:text-slate-100 hover:bg-teal-600 active:bg-teal-800 active:text-teal-100 focus-visible:outline-teal-600" href="">
+            <a class="group inline-flex items-center justify-center rounded py-2 px-4 text-md font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-teal-500 text-white hover:text-slate-100 hover:bg-teal-600 active:bg-teal-800 active:text-teal-100 focus-visible:outline-teal-600" href="{{route('loginpage')}}">
               <span>Mon compte</span>
             </a>
             <div class="-mr-1 md:hidden">
-              <div data-headlessui-state="">
+              <div data-headlessui-state="" id="home-menu">
                 <button class="relative z-10 flex h-8 w-8 items-center justify-center ui-not-focus-visible:outline-none" aria-label="Toggle Navigation" type="button" aria-expanded="false" data-headlessui-state="" id="headlessui-popover-button-:r0:"><svg aria-hidden="true" class="h-3.5 w-3.5 overflow-visible stroke-slate-700" fill="none" stroke-width="2" stroke-linecap="round"><path d="M0 1H14M0 7H14M0 13H14" class="origin-center transition"></path><path d="M2 2L12 12M12 2L2 12" class="origin-center transition scale-90 opacity-0"></path></svg>
                 </button>
               </div>
@@ -42,6 +42,18 @@
         </nav>
       </div>
 	</header>
+
+    {{-- Mobile Navigation --}}
+
+    <div class="absolute -top-80 z-40 bg-white transition-all duration-500 ease-in-out w-full" id="home-mobilenav">
+        <div class="flex relative z-40 flex-col md:hidden gap-y-2 p-4 shadow-lg border">
+            <a class="inline-block rounded-lg p-4 text-md text-slate-700 hover:bg-slate-100 font-bold hover:text-slate-900" href="#nos-chiffres">Nos chiffres</a>
+            <a class="inline-block rounded-lg p-4 text-md text-slate-700 hover:bg-slate-100 font-bold hover:text-slate-900" href="#pricing">Pricing</a>
+            <a class="inline-block rounded-lg p-4 text-md text-slate-700 hover:bg-slate-100 font-bold hover:text-slate-900" href="#contact">Contact</a>
+            <a class="inline-block rounded-lg p-4 text-md text-slate-700 hover:bg-slate-100 font-bold hover:text-slate-900" href="#faq">FAQ</a>
+        </div>
+    </div>
+
     <main>
 		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16 pt-20 text-center lg:pt-32" id="presentation">
 			<h1 class="mx-auto max-w-4xl font-display text-5xl font-bold tracking-tight text-slate-900 sm:text-7xl">Engagez votre<!-- -->
@@ -256,5 +268,29 @@
 		</footer>
 
     </main>
+
+    <script>
+        let menu = document.querySelector('#home-menu');
+        let navmobile = document.querySelector('#home-mobilenav');
+
+        menu.addEventListener('click',()=>{
+            if(navmobile.classList.contains('-top-80')) {
+                navmobile.classList.remove('-top-80')
+                navmobile.setAttribute('tabindex',-1)
+                navmobile.focus();
+                navmobile.classList.add("top-28")
+            } else {
+                navmobile.classList.add('-top-80')
+                navmobile.blur();
+                navmobile.classList.remove("top-28")
+            }
+        })
+
+        // navmobile.addEventListener('blur', () => {
+        //     navmobile.classList.add('-top-64')
+        //     navmobile.classList.remove("top-28")
+        // });
+
+    </script>
 </body>
 </html>

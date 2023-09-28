@@ -57,6 +57,8 @@
             <a href="" class="px-4 py-4 text-white bg-gray-600 w-[100%] flex items-center gap-x-4 rounded-md hover:bg-gray-500"><i class="fa-solid fa-power-off text-red-400"></i> Déconnexion</a>
         </div>
     </div>
+
+    @yield('script')
     <script>
         let sidenav_link = document.querySelectorAll('#sidenav a');
         let menu = document.querySelector('#menu');
@@ -73,7 +75,6 @@
         })
 
         const path = window.location.pathname;
-        console.log(path);
 
         switch (path) {
             case "/customer/dashboard":

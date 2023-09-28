@@ -12,7 +12,7 @@
                     <h1 class="font-bold text-lg text-gray-700">Montant: <span class="text-black font-normal">5000 Fcfa</span></h1>
                     <h1 class="font-bold text-lg text-gray-700">SMS: <span class="text-black font-normal">10 sms</span></h1>
                     <h1 class="font-bold text-lg text-gray-700">Date: <span class="text-black font-normal">17/02/23 à 09:54</span></h1>
-                    <h1 class="font-bold text-lg text-gray-700">Statut: <span class="text-black font-normal">Succès <i class="fa-solid text-green-600 fa-check-double"></i></span></h1>
+                    <h1 class="font-bold text-lg text-gray-700">Statut: <span class="text-black font-normal">Succès <i class="fa-solid text-green-600 fa-check ml-2"></i></span></h1>
                     <h1 class="font-bold text-lg text-gray-700 text-right"><i class="fa-solid text-red-600 fa-trash"></i></h1>
                 </div>
             </div>
@@ -23,7 +23,7 @@
                     <h1 class="font-bold text-lg text-gray-700">Montant: <span class="text-black font-normal">5000 Fcfa</span></h1>
                     <h1 class="font-bold text-lg text-gray-700">SMS: <span class="text-black font-normal">10 sms</span></h1>
                     <h1 class="font-bold text-lg text-gray-700">Date: <span class="text-black font-normal">17/02/23 à 09:54</span></h1>
-                    <h1 class="font-bold text-lg text-gray-700">Statut: <span class="text-black font-normal">Succès <i class="fa-solid text-green-600 fa-check-double"></i></span></h1>
+                    <h1 class="font-bold text-lg text-gray-700">Statut: <span class="text-black font-normal">Succès <i class="fa-solid text-green-600 fa-check ml-2"></i></span></h1>
                     <h1 class="font-bold text-lg text-gray-700 text-right"><i class="fa-solid text-red-600 fa-trash"></i></h1>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                     <h1 class="font-bold text-lg text-gray-700">Montant: <span class="text-black font-normal">5000 Fcfa</span></h1>
                     <h1 class="font-bold text-lg text-gray-700">SMS: <span class="text-black font-normal">10 sms</span></h1>
                     <h1 class="font-bold text-lg text-gray-700">Date: <span class="text-black font-normal">17/02/23 à 09:54</span></h1>
-                    <h1 class="font-bold text-lg text-gray-700">Statut: <span class="text-black font-normal">Succès <i class="fa-solid text-green-600 fa-check-double"></i></span></h1>
+                    <h1 class="font-bold text-lg text-gray-700">Statut: <span class="text-black font-normal">Succès <i class="fa-solid text-green-600 fa-check ml-2"></i></span></h1>
                     <h1 class="font-bold text-lg text-gray-700 text-right"><i class="fa-solid text-red-600 fa-trash"></i></h1>
                 </div>
             </div>
@@ -45,7 +45,7 @@
                     <h1 class="font-bold text-lg text-gray-700">Montant: <span class="text-black font-normal">5000 Fcfa</span></h1>
                     <h1 class="font-bold text-lg text-gray-700">SMS: <span class="text-black font-normal">10 sms</span></h1>
                     <h1 class="font-bold text-lg text-gray-700">Date: <span class="text-black font-normal">17/02/23 à 09:54</span></h1>
-                    <h1 class="font-bold text-lg text-gray-700">Statut: <span class="text-black font-normal">Succès <i class="fa-solid text-green-600 fa-check-double"></i></span></h1>
+                    <h1 class="font-bold text-lg text-gray-700">Statut: <span class="text-black font-normal">Succès <i class="fa-solid text-green-600 fa-check ml-2"></i></span></h1>
                     <h1 class="font-bold text-lg text-gray-700 text-right"><i class="fa-solid text-red-600 fa-trash"></i></h1>
                 </div>
             </div>
@@ -56,7 +56,7 @@
                     <h1 class="font-bold text-lg text-gray-700">Montant: <span class="text-black font-normal">5000 Fcfa</span></h1>
                     <h1 class="font-bold text-lg text-gray-700">SMS: <span class="text-black font-normal">10 sms</span></h1>
                     <h1 class="font-bold text-lg text-gray-700">Date: <span class="text-black font-normal">17/02/23 à 09:54</span></h1>
-                    <h1 class="font-bold text-lg text-gray-700">Statut: <span class="text-black font-normal">Succès <i class="fa-solid text-green-600 fa-check-double"></i></span></h1>
+                    <h1 class="font-bold text-lg text-gray-700">Statut: <span class="text-black font-normal">Succès <i class="fa-solid text-green-600 fa-check ml-2"></i></span></h1>
                     <h1 class="font-bold text-lg text-gray-700 text-right"><i class="fa-solid text-red-600 fa-trash"></i></h1>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                     <h1 class="font-bold text-lg text-gray-700">Montant: <span class="text-black font-normal">5000 Fcfa</span></h1>
                     <h1 class="font-bold text-lg text-gray-700">SMS: <span class="text-black font-normal">10 sms</span></h1>
                     <h1 class="font-bold text-lg text-gray-700">Date: <span class="text-black font-normal">17/02/23 à 09:54</span></h1>
-                    <h1 class="font-bold text-lg text-gray-700">Statut: <span class="text-black font-normal">Succès <i class="fa-solid text-green-600 fa-check-double"></i></span></h1>
+                    <h1 class="font-bold text-lg text-gray-700">Statut: <span class="text-black font-normal">Succès <i class="fa-solid text-green-600 fa-check ml-2"></i></span></h1>
                     <h1 class="font-bold text-lg text-gray-700 text-right"><i class="fa-solid text-red-600 fa-trash"></i></h1>
                 </div>
             </div>

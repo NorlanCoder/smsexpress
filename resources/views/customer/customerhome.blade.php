@@ -38,7 +38,7 @@
                     <textarea name="message" id="message" class="p-3 border-2 border-slate-900" placeholder="Votre Message" rows="5"></textarea>
                 </div>
                 <div class="flex flex-col gap-y-2 w-full mt-2">
-                    <p class="font-semibold">Caractères restant: <span class="text-red-400">100</span> - SMS Total: <span class="text-green-600">1</span></p>
+                    <p class="font-semibold">Caractères restant: <span class="text-red-400" id="reste">100</span> - SMS Total: <span class="text-green-600" id="total">1</span></p>
                 </div>
                 <div class="flex flex-col items-end gap-y-2 w-full mt-2 mb-4">
                     <button type="submit" class="py-2 px-4 bg-teal-500 text-white font-bold rounded-md hover:bg-teal-500">Envoyer</button>
@@ -52,4 +52,52 @@
         </div>
 
     </div>
+@endsection
+
+@section('script')
+    <script>
+
+        const input = document.querySelector('form textarea');
+        const charCount = document.querySelector('#reste');
+        const total = document.querySelector('#total');
+        var msg = 1;
+
+        input.addEventListener('input', function () {
+
+            const texteSaisi = input.value;
+            const nombreCaracteres = texteSaisi.length;
+            if(msg>1) {
+                if(((msg*100) - nombreCaracteres)==0) {
+                    msg += 1;
+                    total.textContent = msg;
+                    charCount.textContent = 100;
+                } else {
+
+                    if(Math.floor(nombreCaracteres/100) != msg-1) {
+                        msg = Math.floor(nombreCaracteres/100)+1;
+                        total.textContent = msg;
+
+                        if(msg>1) charCount.textContent = (100 - nombreCaracteres%100);
+                        else charCount.textContent = (100 - nombreCaracteres);
+
+                    } else {
+                        if(msg>1) charCount.textContent = (100 - nombreCaracteres%100);
+                        else charCount.textContent = (100 - nombreCaracteres);
+                    }
+                }
+            } else {
+                if((100 - nombreCaracteres)==0) {
+                    msg += 1;
+                    total.textContent = msg;
+                    charCount.textContent = 100;
+                } else {
+                    if(msg>1) charCount.textContent = (100 - nombreCaracteres%100);
+                    else charCount.textContent = (100 - nombreCaracteres);
+                }
+            }
+
+
+        })
+
+    </script>
 @endsection
