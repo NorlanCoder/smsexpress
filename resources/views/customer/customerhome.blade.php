@@ -14,7 +14,13 @@
         <div class="w-full flex justify-center my-10">
             <div class="cursor-pointer w-full lg:w-1/2 md:w-2/3 h-56 rounded-md bg-gray-500 shadow-lg flex flex-col gap-y-4 justify-center items-center py-4 px-6">
                 <h2 class="text-center text-white text-xl">SMS DISPONIBLE</h2>
-                <p class=" text-5xl text-white">10 SMS</p>
+                <p class=" text-5xl text-white">
+                    @if (!$abonnement)
+                        {{0}}
+                    @else
+                        {{$abonnement->sms}}
+                    @endif
+                    SMS</p>
                 <p class="uppercase">
                     <a href="" class="px-4 py-4 inline-block bg-teal-500 text-white rounded-md">Acheter du crédit SMS</a>
                 </p>

@@ -1,3 +1,6 @@
+@if(!Auth::user())
+    <script> window.location.href="{{route('loginpage')}}"; </script>
+@endif
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +37,7 @@
             </div>
             <div class="w-[100%] flex flex-col gap-y-4 items-center justify-center ">
                 <a href="" class="px-4 py-4 text-white bg-gray-300 w-[100%] flex items-center gap-x-4 rounded-md hover:bg-gray-400"><i class="fa-solid fa-circle-info"></i> Service Client</a>
-                <a href="" class="px-4 py-4 text-white bg-gray-600 w-[100%] flex items-center gap-x-4 rounded-md hover:bg-gray-500"><i class="fa-solid fa-power-off text-red-400"></i> Déconnexion</a>
+                <a href="{{route('logout')}}" class="px-4 py-4 text-white bg-gray-600 w-[100%] flex items-center gap-x-4 rounded-md hover:bg-gray-500"><i class="fa-solid fa-power-off text-red-400"></i> Déconnexion</a>
             </div>
         </div>
 
@@ -54,7 +57,7 @@
         </div>
         <div class="w-[100%] flex flex-col gap-y-4 items-center justify-center ">
             <a href="" class="px-4 py-4 text-white bg-gray-300 w-[100%] flex items-center gap-x-4 rounded-md hover:bg-gray-400"><i class="fa-solid fa-circle-info"></i> Service Client</a>
-            <a href="" class="px-4 py-4 text-white bg-gray-600 w-[100%] flex items-center gap-x-4 rounded-md hover:bg-gray-500"><i class="fa-solid fa-power-off text-red-400"></i> Déconnexion</a>
+            <a href="{{route('logout')}}" class="px-4 py-4 text-white bg-gray-600 w-[100%] flex items-center gap-x-4 rounded-md hover:bg-gray-500"><i class="fa-solid fa-power-off text-red-400"></i> Déconnexion</a>
         </div>
     </div>
 

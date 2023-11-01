@@ -17,8 +17,11 @@ use App\Http\Controllers\UserController;
 
 Route::get('/', [HomeController::class,'homepage'])->name('home');
 Route::get('/connexion', [HomeController::class,'loginpage'])->name('loginpage');
+Route::post('/connexion', [HomeController::class,'loginpagepost'])->name('loginpagepost');
 Route::get('/inscription', [HomeController::class,'registerpage'])->name('registerpage');
+Route::post('/inscription', [HomeController::class,'registerpagepost'])->name('registerpagepost');
 Route::get('/motdepasseoublie', [HomeController::class,'forgetpage'])->name('forgetpage');
+Route::get('/logout', [HomeController::class,'logout'])->name('logout');
 
 Route::prefix('customer')->group(function () {
     Route::get('/dashboard', [UserController::class,'customerhome'])->name('customerhome');
