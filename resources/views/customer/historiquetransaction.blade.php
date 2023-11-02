@@ -15,16 +15,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="">
-                        <td class="p-3 border uppercase text-teal-500 font-bold">Travel co</td>
-                        <td class="p-3 border">Malcolm Lockyer</td>
-                        <td class="p-3 border">1961</td>
-                    </tr>
-                    <tr class="">
-                        <td class="p-3 border uppercase text-teal-500 font-bold">Afritips</td>
-                        <td class="p-3 border">Malcolm Lockyer</td>
-                        <td class="p-3 border">1961</td>
-                    </tr>
+                    @foreach ($envois as $envoi)
+                        <tr class="">
+                            <td class="p-3 border uppercase text-teal-500 font-bold">{{$envoi->expediteur}}</td>
+                            <td class="p-3 border">{{$envoi->destinataire}}</td>
+                            <td class="p-3 border">{{$envoi->message}}</td>
+                        </tr>
+                    @endforeach
                 </tbody>
               </table>
         </div>

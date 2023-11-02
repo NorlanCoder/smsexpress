@@ -27,6 +27,7 @@ Route::prefix('customer')->group(function () {
     Route::get('/dashboard', [UserController::class,'customerhome'])->name('customerhome');
     Route::get('/historique/souscription', [UserController::class,'customersouscription'])->name('customersouscription');
     Route::get('/historique/transaction', [UserController::class,'customertransaction'])->name('customertransaction');
+    Route::get('/contacts', [UserController::class,'customercontacts'])->name('customercontacts');
     Route::get('/offres', [UserController::class,'customeroffre'])->name('customeroffre');
     Route::get('/profile', [UserController::class,'customerprofile'])->name('customerprofile');
 });

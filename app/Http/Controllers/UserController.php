@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Abonnement;
+use App\Models\Envoi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -27,11 +28,19 @@ class UserController extends Controller
     }
 
     public function customertransaction(Request $request) {
-        return view('customer.historiquetransaction');
+        $user = Auth::user();
+
+        $envois = Envoi::where('user_id',$user->id)->where('statut',1)->get();
+
+        return view('customer.historiquetransaction')->with(compact('envois'));
     }
 
     public function customerprofile(Request $request) {
         return view('customer.customerprofile');
+    }
+
+    public function customercontacts(Request $request) {
+        return view('customer.addresscontact');
     }
 
     public function customeroffre(Request $request) {

@@ -32,6 +32,7 @@
                 <a href="{{route('customerhome')}}" class="px-4 py-4 text-gray-600 bg-slate-50 hover:bg-slate-100 w-[100%] flex gap-x-4 font-semibold items-center rounded-md"><i class="fa-brands fa-font-awesome "></i> Envoyer un SMS</a>
                 <a href="{{route('customersouscription')}}" class="px-4 py-4 text-gray-600 bg-slate-50 hover:bg-slate-100 flex items-center gap-x-4 font-semibold w-[100%] rounded-md"><i class="fa-solid fa-money-bill-trend-up"></i> Historiques de paiements</a>
                 <a href="{{route('customertransaction')}}" class="px-4 py-4 text-gray-600 bg-slate-50 hover:bg-slate-100 flex items-center gap-x-4 font-semibold w-[100%] rounded-md"><i class="fa-solid fa-paper-plane"></i> Historiques des envois</a>
+                <a href="{{route('customercontacts')}}" class="px-4 py-4 text-gray-600 bg-slate-50 hover:bg-slate-100 flex items-center gap-x-4 font-semibold w-[100%] rounded-md"><i class="fa-solid fa-address-book"></i> Ajouter Contact</a>
                 <a href="{{route('customeroffre')}}" class="px-4 py-4 text-gray-600 bg-slate-50 hover:bg-slate-100 flex items-center gap-x-4 font-semibold w-[100%] rounded-md"><i class="fa-solid fa-envelope-circle-check"></i> Abonnement Pro</a>
                 <a href="{{route('customerprofile')}}" class="px-4 py-4 text-gray-600 bg-slate-50 hover:bg-slate-100 flex items-center gap-x-4 font-semibold w-[100%] rounded-md"><i class="fa-solid fa-user-tie"></i> Profile</a>
             </div>
@@ -52,6 +53,7 @@
             <a href="{{route('customerhome')}}" class="px-4 py-4 text-gray-600 bg-slate-50 hover:bg-slate-100 w-[100%] flex gap-x-4 font-semibold items-center rounded-md"><i class="fa-brands fa-font-awesome "></i> Envoyer un SMS</a>
             <a href="{{route('customersouscription')}}" class="px-4 py-4 text-gray-600 bg-slate-50 hover:bg-slate-100 flex items-center gap-x-4 font-semibold w-[100%] rounded-md"><i class="fa-solid fa-money-bill-trend-up"></i> Historiques de paiements</a>
             <a href="{{route('customertransaction')}}" class="px-4 py-4 text-gray-600 bg-slate-50 hover:bg-slate-100 flex items-center gap-x-4 font-semibold w-[100%] rounded-md"><i class="fa-solid fa-paper-plane"></i> Historiques des envois</a>
+            <a href="{{route('customertransaction')}}" class="px-4 py-4 text-gray-600 bg-slate-50 hover:bg-slate-100 flex items-center gap-x-4 font-semibold w-[100%] rounded-md"><i class="fa-solid fa-address-book"></i> Ajouter Contact</a>
             <a href="{{route('customeroffre')}}" class="px-4 py-4 text-gray-600 bg-slate-50 hover:bg-slate-100 flex items-center gap-x-4 font-semibold w-[100%] rounded-md"><i class="fa-solid fa-envelope-circle-check"></i> Abonnement Pro</a>
             <a href="{{route('customerprofile')}}" class="px-4 py-4 text-gray-600 bg-slate-50 hover:bg-slate-100 flex items-center gap-x-4 font-semibold w-[100%] rounded-md"><i class="fa-solid fa-user-tie"></i> Profile</a>
         </div>
