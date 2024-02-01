@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="shortcut icon" href="{{asset('image/logo.jpg')}}" type="image/x-icon">
     <title>SMS EXPRESS | Mot de passe oublié</title>
-    {{-- <link rel="stylesheet" href="{{asset('build/assets/app-ff53ee22.css')}}"> --}}
-	{{-- <script src=" {{asset('build/assets/app-0d91dc04.js')}} "></script> --}}
-    @vite('resources/css/app.css')
+    <link rel="stylesheet" href="{{asset('build/assets/app-64a05f50.css')}}">
+	<script src=" {{asset('build/assets/app-0d91dc04.js')}} "></script>
+    {{-- @vite('resources/css/app.css') --}}
 </head>
 <body>
     <header class="relative z-50 py-10">
@@ -20,7 +20,7 @@
             </a>
             <div class="hidden md:flex md:gap-x-6">
               <a class="inline-block rounded-lg px-2 py-1 text-md text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="{{route('home')}}#nos-chiffres">Nos chiffres</a>
-              <a class="inline-block rounded-lg px-2 py-1 text-md text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="{{route('home')}}#pricing">Pricing</a>
+              <a class="inline-block rounded-lg px-2 py-1 text-md text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="{{route('home')}}#pricing">Tarif</a>
               <a class="inline-block rounded-lg px-2 py-1 text-md text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="{{route('home')}}#contact">Contact</a>
             </div>
           </div>
@@ -48,7 +48,7 @@
     <div class="absolute -top-80 z-40 bg-white transition-all duration-500 ease-in-out w-full" id="home-mobilenav">
         <div class="flex relative z-40 flex-col md:hidden gap-y-2 p-4 shadow-lg border">
             <a class="inline-block rounded-lg p-4 text-md text-slate-700 hover:bg-slate-100 font-bold hover:text-slate-900" href="{{route('home')}}#nos-chiffres">Nos chiffres</a>
-            <a class="inline-block rounded-lg p-4 text-md text-slate-700 hover:bg-slate-100 font-bold hover:text-slate-900" href="{{route('home')}}#pricing">Pricing</a>
+            <a class="inline-block rounded-lg p-4 text-md text-slate-700 hover:bg-slate-100 font-bold hover:text-slate-900" href="{{route('home')}}#pricing">Tarif</a>
             <a class="inline-block rounded-lg p-4 text-md text-slate-700 hover:bg-slate-100 font-bold hover:text-slate-900" href="{{route('home')}}#contact">Contact</a>
             <a class="inline-block rounded-lg p-4 text-md text-slate-700 hover:bg-slate-100 font-bold hover:text-slate-900" href="{{route('home')}}#faq">FAQ</a>
         </div>

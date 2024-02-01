@@ -14,7 +14,7 @@ class Abonnement extends Model
         'prix',
         'sms',
         'pack',
-        'pack_id',
+        'pack_code',
         'user_id',
         'achat_id',
         'statut',

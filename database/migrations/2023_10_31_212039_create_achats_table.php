@@ -16,7 +16,7 @@ return new class extends Migration
             $table->integer('somme');
             $table->string('code');
             $table->integer('user_id')->unsigned();
-            $table->integer('pack_id')->unsigned();
+            $table->string('pack_code');
             $table->integer('statut')->default(0);
             $table->timestamps();
         });

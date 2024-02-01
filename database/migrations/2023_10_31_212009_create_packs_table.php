@@ -14,7 +14,9 @@ return new class extends Migration
         Schema::create('packs', function (Blueprint $table) {
             $table->id();
             $table->string('nom');
-            $table->integer('prix');
+            $table->string('code');
+            $table->string('prix');
+            $table->integer('chiffre');
             $table->integer('sms');
             $table->timestamps();
         });

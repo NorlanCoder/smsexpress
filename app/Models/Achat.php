@@ -13,7 +13,7 @@ class Achat extends Model
         'somme',
         'code',
         'user_id',
-        'pack_id',
+        'pack_code',
         'statut'
     ];
 }

@@ -22,28 +22,37 @@
                     @endif
                     SMS</p>
                 <p class="uppercase">
-                    <a href="" class="px-4 py-4 inline-block bg-teal-500 text-white rounded-md">Acheter du crédit SMS</a>
+                    <a href="{{route('customeroffre')}}" class="px-4 py-4 inline-block bg-green-600 shadow-xl shadow-white/10 text-white rounded-md">Acheter du crédit SMS</a>
                 </p>
             </div>
         </div>
 
+        <div class="my-4">
+            @error('msg')
+                <div class="text-red-400 text-center font-extrabold">{{ $message }}</div>
+            @enderror
+            @error('success')
+                <div class="text-green-600 text-center font-extrabold">{{ $message }}</div>
+            @enderror
+        </div>
+
         {{-- Formulaire SMS --}}
         <div class="w-full flex flex-col justify-center items-center gap-y-4 my-10">
-            <form action="" class="w-full lg:w-1/2 md:w-2/3">
+            <form action="{{route('customermessagesend')}}" method="POST" class="w-full lg:w-1/2 md:w-2/3">
                 @csrf
                 <div class="flex flex-col gap-y-2 w-full mt-2">
                     <label for="expediteur">Nom de l'expéditeur</label>
-                    <input type="text" id="expediteur" name="expediteur" class="p-3 border-2 border-slate-900" placeholder="EX: ONG BAYA">
+                    <input type="text" id="expediteur" name="expediteur" class="p-3 border-2 border-slate-900" placeholder="Nom de l'expéditeur" required>
                 </div>
                 <div class="flex flex-col gap-y-2 w-full mt-2">
-                    <label for="destinataire">Destinataire</label>
-                    <input type="tel" id="destinataire" name="destinataire" class="p-3 border-2 border-slate-900" placeholder="EX: +33 7 11 22 33 44">
+                    <label for="destinataire">Numero du destinataire</label>
+                    <input type="tel" id="destinataire" name="destinataire" class="p-3 border-2 border-slate-900" placeholder="+Indicatif Numéro du destinataire" required>
                 </div>
                 <div class="flex flex-col gap-y-2 w-full mt-2">
                     <label for="message">Message</label>
-                    <textarea name="message" id="message" class="p-3 border-2 border-slate-900" placeholder="Votre Message" rows="5"></textarea>
+                    <textarea name="message" id="message" class="p-3 border-2 border-slate-900" placeholder="Votre Message" rows="5" required></textarea>
                 </div>
-                <div class="flex flex-col gap-y-2 w-full mt-2">
+                <div class="flex flex-col gap-y-2 w-full mt-2 @if($abonnement && $abonnement->pack=='Pro') hidden @endif">
                     <p class="font-semibold">Caractères restant: <span class="text-red-400" id="reste">100</span> - SMS Total: <span class="text-green-600" id="total">1</span></p>
                 </div>
                 <div class="flex flex-col items-end gap-y-2 w-full mt-2 mb-4">
@@ -53,9 +62,9 @@
         </div>
 
         {{-- Call To Action --}}
-        <div class="w-full flex justify-end fixed bottom-4 right-10 ">
-            <a href="" class="py-2 px-4 text-white bg-green-600 block rounded-xl hover:bg-gray-500">Abonnement Pro</a>
-        </div>
+        {{-- <div class="w-full flex justify-end fixed bottom-4 right-10 ">
+            <a href="{{route('customeroffre')}}" class="py-2 px-4 text-white bg-green-600 block rounded-xl hover:bg-gray-500">Abonnement Pro</a>
+        </div> --}}
 
     </div>
 @endsection

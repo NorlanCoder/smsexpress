@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="shortcut icon" href="{{asset('image/logo.jpg')}}" type="image/x-icon">
     <title>SMS EXPRESS | Connexion</title>
-    {{-- <link rel="stylesheet" href="{{asset('build/assets/app-ff53ee22.css')}}"> --}}
-	{{-- <script src=" {{asset('build/assets/app-0d91dc04.js')}} "></script> --}}
-    @vite('resources/css/app.css')
+    <link rel="stylesheet" href="{{asset('build/assets/app-64a05f50.css')}}">
+	<script src=" {{asset('build/assets/app-0d91dc04.js')}} "></script>
+    {{-- @vite('resources/css/app.css') --}}
 </head>
 <body>
     <header class="relative z-50 py-10">
@@ -20,7 +20,7 @@
             </a>
             <div class="hidden md:flex md:gap-x-6">
               <a class="inline-block rounded-lg px-2 py-1 text-md text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="{{route('home')}}#nos-chiffres">Nos chiffres</a>
-              <a class="inline-block rounded-lg px-2 py-1 text-md text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="{{route('home')}}#pricing">Pricing</a>
+              <a class="inline-block rounded-lg px-2 py-1 text-md text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="{{route('home')}}#pricing">Tarif</a>
               <a class="inline-block rounded-lg px-2 py-1 text-md text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="{{route('home')}}#contact">Contact</a>
             </div>
           </div>
@@ -48,7 +48,7 @@
     <div class="absolute -top-80 z-40 bg-white transition-all duration-500 ease-in-out w-full" id="home-mobilenav">
         <div class="flex relative z-40 flex-col md:hidden gap-y-2 p-4 shadow-lg border">
             <a class="inline-block rounded-lg p-4 text-md text-slate-700 hover:bg-slate-100 font-bold hover:text-slate-900" href="{{route('home')}}#nos-chiffres">Nos chiffres</a>
-            <a class="inline-block rounded-lg p-4 text-md text-slate-700 hover:bg-slate-100 font-bold hover:text-slate-900" href="{{route('home')}}#pricing">Pricing</a>
+            <a class="inline-block rounded-lg p-4 text-md text-slate-700 hover:bg-slate-100 font-bold hover:text-slate-900" href="{{route('home')}}#pricing">Tarif</a>
             <a class="inline-block rounded-lg p-4 text-md text-slate-700 hover:bg-slate-100 font-bold hover:text-slate-900" href="{{route('home')}}#contact">Contact</a>
             <a class="inline-block rounded-lg p-4 text-md text-slate-700 hover:bg-slate-100 font-bold hover:text-slate-900" href="{{route('home')}}#faq">FAQ</a>
         </div>
@@ -75,7 +75,7 @@
                 @enderror
                 <div>
                     <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Votre e-mail</label>
-                    <input type="email" name="email" value="{{old('email')}}" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-teal-600 focus:border-teal-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required="">
+                    <input type="email" name="email" value="{{old('email')}}" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-teal-600 focus:border-teal-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="E-mail" required="">
                     @error('email')
                         <div class="text-red-400">{{ $message }}</div>
                     @enderror
@@ -99,7 +99,7 @@
                     <a href="{{route('forgetpage')}}" class="text-sm font-medium text-teal-600 hover:underline dark:text-teal-500">Mot de passe oublié ?</a>
                 </div>
                 <button type="submit" class="w-full text-white bg-teal-600 hover:bg-teal-700 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-800">Se connecter</button>
-                <p class="text-sm mt-0 font-light text-gray-500 dark:text-gray-400">
+                <p class="text-lg mt-0 font-light text-gray-500 dark:text-gray-400">
                     Vous n'avez pas de compte ? <a href="{{route('registerpage')}}" class="font-medium text-teal-600 hover:underline dark:text-teal-500">S'inscrire</a>
                 </p>
             </form>

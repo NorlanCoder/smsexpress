@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="shortcut icon" href="{{asset('image/logo.jpg')}}" type="image/x-icon">
     <title>SMS EXPRESS</title>
-    {{-- <link rel="stylesheet" href="{{asset('build/assets/app-ff53ee22.css')}}"> --}}
-	{{-- <script src=" {{asset('build/assets/app-0d91dc04.js')}} "></script> --}}
+    {{-- <link rel="stylesheet" href="{{asset('build/assets/app-64a05f50.css')}}">
+	<script src=" {{asset('build/assets/app-0d91dc04.js')}} "></script> --}}
     @vite('resources/css/app.css')
 </head>
 <body>
@@ -20,7 +20,7 @@
             </a>
             <div class="hidden md:flex md:gap-x-6">
               <a class="inline-block rounded-lg px-2 py-1 text-md text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="#nos-chiffres">Nos chiffres</a>
-              <a class="inline-block rounded-lg px-2 py-1 text-md text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="#pricing">Pricing</a>
+              <a class="inline-block rounded-lg px-2 py-1 text-md text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="#pricing">Tarif</a>
               <a class="inline-block rounded-lg px-2 py-1 text-md text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="#contact">Contact</a>
             </div>
           </div>
@@ -48,7 +48,7 @@
     <div class="absolute -top-80 z-40 bg-white transition-all duration-500 ease-in-out w-full" id="home-mobilenav">
         <div class="flex relative z-40 flex-col md:hidden gap-y-2 p-4 shadow-lg border">
             <a class="inline-block rounded-lg p-4 text-md text-slate-700 hover:bg-slate-100 font-bold hover:text-slate-900" href="#nos-chiffres">Nos chiffres</a>
-            <a class="inline-block rounded-lg p-4 text-md text-slate-700 hover:bg-slate-100 font-bold hover:text-slate-900" href="#pricing">Pricing</a>
+            <a class="inline-block rounded-lg p-4 text-md text-slate-700 hover:bg-slate-100 font-bold hover:text-slate-900" href="#pricing">Tarif</a>
             <a class="inline-block rounded-lg p-4 text-md text-slate-700 hover:bg-slate-100 font-bold hover:text-slate-900" href="#contact">Contact</a>
             <a class="inline-block rounded-lg p-4 text-md text-slate-700 hover:bg-slate-100 font-bold hover:text-slate-900" href="#faq">FAQ</a>
         </div>
@@ -56,15 +56,15 @@
 
     <main>
 		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16 pt-20 text-center lg:pt-32" id="presentation">
-			<h1 class="mx-auto max-w-4xl font-display text-5xl font-bold tracking-tight text-slate-900 sm:text-7xl">Engagez votre<!-- -->
+			<h1 class="mx-auto max-w-4xl font-display text-5xl font-bold tracking-tight text-slate-900 sm:text-7xl">Communiquer facilement avec vos<!-- -->
 			<span class="relative whitespace-nowrap text-teal-400">
 				<svg aria-hidden="true" viewBox="0 0 418 42" class="absolute left-0 top-2/3 h-[0.58em] w-full fill-teal-600/50" preserveAspectRatio="none"><path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z"></path></svg>
-				<span class="relative">audiance</span>
-			</span> <!-- -->avec sms express.
+				<span class="relative">clients</span>
+			</span> <!-- -->grâce à l'envoi des sms professionels.
 			</h1>
 			<p class="mx-auto mt-6 max-w-2xl text-xl tracking-tight text-slate-700">Simplifiez votre manière de communiquer et d'interagir avec vos clients grâce à notre solution SMS hautement fiable et facile à utiliser.</p>
 			<div class="mt-10 flex justify-center gap-x-6">
-			<a class="group inline-flex items-center justify-center rounded py-2 px-4 text-md font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900" href="/register">C'est parti</a>
+			<a class="group inline-flex items-center justify-center rounded py-3 px-4 text-md font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-teal-400 text-white hover:bg-teal-700 hover:text-teal-100 active:bg-teal-800 active:text-teal-300 focus-visible:outline-teal-900" href="/register">Tester gratuitement</a>
 			</div>
 			{{-- <div class="mt-36 lg:mt-24">
 				<p class="font-display text-base text-slate-900">Ces entreprises nous ont fais confiance</p>
@@ -131,37 +131,15 @@
 				</div>
 				<div class="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-5 md:mx-0 md:gap-x-8">
 
+                    @foreach ($packs as $pack)
+                        <section class="flex border @if($pack->nom=="Pro") border-teal-400 border-2 @else border-white @endif h-max flex-col rounded-3xl px-6 sm:px-8 py-8 md:mx-0 mx-8">
+                            <h3 class="mt-1 font-display text-lg text-white">{{$pack->sms}} SMS</h3>
+                            <p class="mt-2 text-base text-slate-400">Pack {{$pack->nom}} </p>
+                            <a class="group inline-flex ring-1 items-center justify-center rounded-full py-3 px-4 focus:outline-none bg-blue-400 text-lg hover:scale-110 ring-slate-700 text-white hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white mt-8" href="{{route('souscriptioncheck',$pack->id)}}">Recharger</a>
+                            <p class="order-first font-display text-3xl font-light tracking-tight text-teal-400">{{$pack->prix}} FCFA</p>
+                        </section>
+                    @endforeach
 
-					<section class="flex border border-white h-max flex-col rounded-3xl px-6 sm:px-8 py-8 md:mx-0 mx-8">
-						<h3 class="mt-1 font-display text-lg text-white">10 SMS</h3>
-						<p class="mt-2 text-base text-slate-400">Pack 1</p>
-						<a class="group inline-flex ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none ring-slate-700 text-white hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white mt-8" href="/register">Souscrire</a>
-						<p class="order-first font-display text-3xl font-light tracking-tight text-teal-400">4500 FCFA</p>
-					</section>
-					<section class="flex border border-white h-max flex-col rounded-3xl px-6 sm:px-8 py-8 md:mx-0 mx-8">
-						<h3 class="mt-1 font-display text-lg text-white">30 SMS</h3>
-						<p class="mt-2 text-base text-slate-400">Pack 2</p>
-						<a class="group inline-flex ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none ring-slate-700 text-white hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white mt-8" href="/register">Souscrire</a>
-						<p class="order-first font-display text-3xl font-light tracking-tight text-teal-400">9000 FCFA</p>
-					</section>
-					<section class="flex border border-white h-max flex-col rounded-3xl px-6 sm:px-8 py-8 md:mx-0 mx-8">
-						<h3 class="mt-1 font-display text-lg text-white">100 SMS</h3>
-						<p class="mt-2 text-base text-slate-400">Pack 3</p>
-						<a class="group inline-flex ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none ring-slate-700 text-white hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white mt-8" href="/register">Souscrire</a>
-						<p class="order-first font-display text-3xl font-light tracking-tight text-teal-400">23.000 FCFA</p>
-					</section>
-					<section class="flex border border-white h-max flex-col rounded-3xl px-6 sm:px-8 py-8 md:mx-0 mx-8">
-						<h3 class="mt-1 font-display text-lg text-white">250 SMS</h3>
-						<p class="mt-2 text-base text-slate-400">Pack 4</p>
-						<a class="group inline-flex ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none ring-slate-700 text-white hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white mt-8" href="/register">Souscrire</a>
-						<p class="order-first font-display text-3xl font-light tracking-tight text-teal-400">46.000 FCFA</p>
-					</section>
-					<section class="flex border-4 border-teal-400 h-max flex-col rounded-3xl px-6 sm:px-8 py-8 md:mx-0 mx-8">
-						<h3 class="mt-1 font-display text-lg text-white">SMS Illimité</h3>
-						<p class="mt-2 text-base text-slate-400">Entreprise</p>
-						<a class="group inline-flex ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none ring-slate-700 text-white hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white mt-8" href="/register">Souscrire</a>
-						<p class="order-first font-display text-3xl lg:text-lg font-bold tracking-tight text-teal-400">100.000 FCFA <span class="text-sm text-white">/mois</span> </p>
-					</section>
 					{{-- <section class="flex flex-col rounded-3xl px-6 sm:px-8 lg:py-8">
 						<h3 class="mt-5 font-display text-lg text-white">Enterprise</h3>
 						<p class="mt-2 text-base text-slate-400">For even the biggest enterprise companies.</p>
@@ -200,7 +178,7 @@
 				<div class="mx-auto max-w-3xl text-center">
 					<h2 class="font-display text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">Contactez-nous</h2>
 					<p class="mt-4 text-lg tracking-tight text-black">Nous sommes ravis de vous entendre ! Si vous avez des questions, des commentaires ou que vous souhaitez simplement discuter, n'hésitez pas à nous contacter en utilisant le formulaire ci-dessous. Nous ferons de notre mieux pour vous répondre dans les plus brefs délais.</p>
-					<a class="group inline-flex items-center justify-center rounded py-2 px-4 text-md font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-slate-800 active:bg-blue-200 active:text-slate-600 focus-visible:outline-white mt-10" href="mailto:fabienamoussou20062001@gmail.com">Envoyez nous un e-mail</a>
+					<a class="group inline-flex items-center justify-center rounded py-2 px-4 text-md font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-slate-800 active:bg-blue-200 active:text-slate-600 focus-visible:outline-white mt-10" href="mailto:contact@smsexpress.pro">Envoyez nous un e-mail</a>
 				</div>
 			</div>
 		</section>
@@ -250,9 +228,10 @@
 					<nav class="mt-10 text-sm" aria-label="quick links">
 						<div class="-my-1 flex justify-center gap-x-6">
 							<a class="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="#nos-chiffres">Nos chiffres</a>
-							<a class="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="#pricing">Pricing</a>
+							<a class="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="#pricing">Tarif</a>
 							<a class="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="#faq">FAQ</a>
 							<a class="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="#contact">Contact</a>
+							<a class="inline-block rounded-lg px-2 py-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="#contact">Conditions générales d'utilisations</a>
 						</div>
 					</nav>
 				</div>
@@ -268,7 +247,6 @@
 		</footer>
 
     </main>
-
     <script>
         let menu = document.querySelector('#home-menu');
         let navmobile = document.querySelector('#home-mobilenav');
@@ -285,6 +263,7 @@
                 navmobile.classList.remove("top-28")
             }
         })
+
 
         // navmobile.addEventListener('blur', () => {
         //     navmobile.classList.add('-top-64')

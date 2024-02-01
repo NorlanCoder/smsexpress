@@ -11,7 +11,9 @@ class Pack extends Model
 
     protected $fillable = [
         'nom',
+        'code',
         'prix',
         'sms',
+        'chiffre',
     ];
 }

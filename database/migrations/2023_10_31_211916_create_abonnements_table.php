@@ -17,7 +17,7 @@ return new class extends Migration
             $table->integer('prix');
             $table->integer('sms');
             $table->string('pack');
-            $table->integer('pack_id')->unsigned();
+            $table->string('pack_code');
             $table->integer('user_id')->unsigned();
             $table->integer('achat_id')->unsigned();
             $table->integer('statut')->default(0);
